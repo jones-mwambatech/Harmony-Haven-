@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harmony Haven Spa – Luxury massage and spa services in Chudleigh, Lusaka. Swedish, Deep Tissue, Thai, Sports, Couples Massage & more. Book today!" />
+  <meta name="keywords" content="spa Lusaka, massage Lusaka, Harmony Haven Spa, relaxation, Swedish massage, deep tissue massage, Chudleigh spa" />
+  <title>Harmony Haven Spa | Relax. Renew. Rejuvenate.</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ 
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Harmony Haven</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Book Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-badge"><i class="fa-solid fa-spa" style="margin-right:8px"></i>Lusaka's Premier Spa</div>
+    <h1>Harmony <em>Haven</em><br>Spa</h1>
+    <p>Escape the ordinary. Step into a world of deep relaxation, professional care, and renewed spirit.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-gold"><i class="fa-solid fa-spa" style="margin-right:8px"></i>Our Services</a>
+      <a href="tel:0978466609" class="btn-outline"><i class="fa-solid fa-phone" style="margin-right:8px"></i>Book Now</a>
+    </div>
+    <div class="promo-ribbon">
+      <i class="fa-solid fa-tag"></i>
+      <span>🎉 Grand Opening — All Massages at K250 Only! Limited Time Offer</span>
+      <i class="fa-solid fa-tag"></i>
+    </div>
+  </section>
+
+  <!-- SEARCH -->
+  <div id="search-section">
+    <div style="width:100%; max-width: 620px;">
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search services, e.g. 'couples massage'…" />
+        <button onclick="doSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </div>
+  <div id="search-results"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-img-wrap reveal">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80" alt="Spa ambiance" />
+      <div class="about-img-overlay">
+        <div class="about-stat">9+</div>
+        <div class="about-stat-label">Signature Services</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="section-label"><i class="fa-solid fa-leaf" style="margin-right:6px"></i>Who We Are</p>
+      <h2 class="section-title">A Sanctuary of <em>Peace</em> & Healing</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Harmony Haven Spa is Lusaka's newest luxury wellness destination, nestled in the heart of Chudleigh. We offer a curated menu of professional massage therapies designed to heal, refresh, and restore your body and mind.</p>
+      <ul class="about-features">
+        <li><i class="fa-solid fa-circle-check"></i> Professional, certified therapists</li>
+        <li><i class="fa-solid fa-circle-check"></i> Calming, private treatment rooms</li>
+        <li><i class="fa-solid fa-circle-check"></i> Premium organic spa products</li>
+        <li><i class="fa-solid fa-circle-check"></i> Flexible appointment scheduling</li>
+        <li><i class="fa-solid fa-circle-check"></i> Grand opening promotional pricing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-header reveal">
+      <p class="section-label"><i class="fa-solid fa-hands" style="margin-right:6px"></i>What We Offer</p>
+      <h2 class="section-title">Our <em>Signature</em> Services</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Every treatment is performed by trained professionals in a serene, welcoming environment. All prices shown include our Grand Opening promotion.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+        <div class="service-name">Swedish Massage</div>
+        <div class="service-desc">Classic full-body relaxation using long, flowing strokes to ease tension and boost circulation.</div>
+        <div class="service-price">K250 <s>K300</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-hand-fist"></i></div>
+        <div class="service-name">Deep Tissue</div>
+        <div class="service-desc">Targets deep muscle layers to relieve chronic pain, knots, and muscle stiffness.</div>
+        <div class="service-price">K250 <s>K350</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-yin-yang"></i></div>
+        <div class="service-name">Thai Massage</div>
+        <div class="service-desc">An ancient healing art combining acupressure, stretching, and compression techniques.</div>
+        <div class="service-price">K250 <s>K400</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div>
+        <div class="service-name">Sports Massage</div>
+        <div class="service-desc">Designed for athletes to improve performance, prevent injury, and speed up recovery.</div>
+        <div class="service-price">K250 <s>K400</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-soap"></i></div>
+        <div class="service-name">Body Scrub</div>
+        <div class="service-desc">Exfoliates and nourishes the skin, leaving your body silky-smooth and deeply refreshed.</div>
+        <div class="service-price">K250 <s>K400</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="service-name">Sensual Massage</div>
+        <div class="service-desc">A deeply relaxing, intimate massage experience for ultimate stress relief and connection.</div>
+        <div class="service-price">K250 <s>K400</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-drum"></i></div>
+        <div class="service-name">Zambian Traditional</div>
+        <div class="service-desc">Experience the healing wisdom of Zambian herbal and traditional massage techniques.</div>
+        <div class="service-price">K250 <s>K500</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-people-arrows"></i></div>
+        <div class="service-name">Couples Massage</div>
+        <div class="service-desc">Share the relaxation experience side-by-side with your partner in a private treatment room.</div>
+        <div class="service-price">K250 <s>K600</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fa-solid fa-hands-holding"></i></div>
+        <div class="service-name">Four Hand Massage</div>
+        <div class="service-desc">Two therapists working in harmony for the ultimate synchronized full-body experience.</div>
+        <div class="service-price">K250 <s>K800</s></div>
+        <div class="service-promo">Promo</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="gallery-header reveal">
+      <p class="section-label"><i class="fa-regular fa-images" style="margin-right:6px"></i>Our Space</p>
+      <h2 class="section-title">A Glimpse of <em>Harmony</em></h2>
+      <div class="divider"></div>
+      <p class="section-sub" style="margin:0 auto;">Step inside and feel the calm before you even arrive.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900&q=80" alt="Spa treatment room" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600&q=80" alt="Massage therapy" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80" alt="Spa products" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&q=80" alt="Relaxation area" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1470259078422-826894b933aa?w=600&q=80" alt="Essential oils" />
+        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <section id="promo">
+    <p class="section-label" style="text-align:center"><i class="fa-solid fa-tag" style="margin-right:6px"></i>Limited Time Offer</p>
+    <h2 class="section-title reveal" style="text-align:center">Grand Opening <em>Special</em></h2>
+    <div class="promo-price-display reveal">
+      <div class="promo-price-now">K250</div>
+      <div class="promo-price-was">
+        <div class="promo-was-label">Was from</div>
+        <div class="promo-was-price">K300–K800</div>
+      </div>
+    </div>
+    <p class="promo-note reveal"><i class="fa-regular fa-clock" style="margin-right:6px"></i>For a limited time only — all massages at K250. Don't miss out!</p>
+    <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:0978466609" class="btn-gold"><i class="fa-solid fa-phone" style="margin-right:8px"></i>Call to Book</a>
+      <a href="https://wa.me/260978466609" target="_blank" class="btn-outline"><i class="fa-brands fa-whatsapp" style="margin-right:8px"></i>WhatsApp Us</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-info reveal">
+      <p class="section-label"><i class="fa-solid fa-address-card" style="margin-right:6px"></i>Get In Touch</p>
+      <h2 class="section-title">Visit <em>Us</em> Today</h2>
+      <div class="divider"></div>
+
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="contact-item-text">
+          <h4>Location</h4>
+          <p>Central Street 9644, Chudleigh<br>Lusaka, Zambia</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="contact-item-text">
+          <h4>Phone / WhatsApp</h4>
+          <p><a href="tel:0978466609">0978 466 609</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+        <div class="contact-item-text">
+          <h4>Opening Hours</h4>
+          <p>Monday – Saturday: 9am – 8pm<br>Sunday: 10am – 6pm</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa-solid fa-spa"></i></div>
+        <div class="contact-item-text">
+          <h4>Walk-ins Welcome</h4>
+          <p>Appointments preferred. Same-day bookings available.</p>
+        </div>
+      </div>
+
+      <div class="social-row">
+        <a href="#" class="social-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/260978466609" class="social-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="social-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="tel:0978466609" class="social-btn" title="Call"><i class="fa-solid fa-phone"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form reveal">
+      <p class="section-label"><i class="fa-regular fa-envelope" style="margin-right:6px"></i>Send a Message</p>
+      <h2 class="section-title" style="font-size:2rem;">Book an <em>Appointment</em></h2>
+      <div class="divider"></div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname"><i class="fa-regular fa-user" style="margin-right:5px"></i>First Name</label>
+          <input type="text" id="fname" placeholder="Your first name" />
+        </div>
+        <div class="form-group">
+          <label for="lname"><i class="fa-regular fa-user" style="margin-right:5px"></i>Last Name</label>
+          <input type="text" id="lname" placeholder="Your last name" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone"><i class="fa-solid fa-phone" style="margin-right:5px"></i>Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. 0978 000 000" />
+      </div>
+
+      <div class="form-group">
+        <label for="service"><i class="fa-solid fa-spa" style="margin-right:5px"></i>Service Requested</label>
+        <select id="service">
+          <option value="">— Select a service —</option>
+          <option>Swedish Massage (K250)</option>
+          <option>Deep Tissue (K250)</option>
+          <option>Thai Massage (K250)</option>
+          <option>Sports Massage (K250)</option>
+          <option>Body Scrub (K250)</option>
+          <option>Sensual Massage (K250)</option>
+          <option>Zambian Traditional (K250)</option>
+          <option>Couples Massage (K250)</option>
+          <option>Four Hand Massage (K250)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date"><i class="fa-regular fa-calendar" style="margin-right:5px"></i>Preferred Date & Time</label>
+        <input type="datetime-local" id="date" />
+      </div>
+
+      <div class="form-group">
+        <label for="message"><i class="fa-regular fa-comment" style="margin-right:5px"></i>Additional Notes</label>
+        <textarea id="message" placeholder="Any special requests or questions?"></textarea>
+      </div>
+
+      <button class="btn-gold" style="width:100%;padding:16px" onclick="submitForm()">
+        <i class="fa-solid fa-paper-plane" style="margin-right:8px"></i>Send Booking Request
+      </button>
+
+      <div class="form-success" id="formSuccess">
+        <i class="fa-solid fa-circle-check" style="margin-right:8px"></i>
+        Thank you! We'll confirm your appointment via WhatsApp or call shortly.
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <div id="map-section">
+    <div class="map-header reveal">
+      <p class="section-label"><i class="fa-solid fa-map-location-dot" style="margin-right:6px"></i>Find Us</p>
+      <h2 class="section-title">We're in <em>Chudleigh</em>, Lusaka</h2>
+      <div class="divider"></div>
+      <p class="section-sub" style="margin:0 auto;">Central Street 9644, Chudleigh, Lusaka, Zambia</p>
+    </div>
+    <iframe
+      id="map"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.1!2d28.3228!3d-15.4067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19408b2d7b7b7b7b%3A0x0!2sChudleigh%2C+Lusaka%2C+Zambia!5e0!3m2!1sen!2szm!4v1700000000000!5m2!1sen!2szm"
+      title="Harmony Haven Spa Location">
+    </iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo">Harmony Haven</a>
+      <p>Your sanctuary for relaxation, renewal, and rejuvenation in the heart of Lusaka.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Swedish Massage</a></li>
+        <li><a href="#services">Deep Tissue</a></li>
+        <li><a href="#services">Thai Massage</a></li>
+        <li><a href="#services">Couples Massage</a></li>
+        <li><a href="#services">Four Hand Massage</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#promo">Promotions</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:0978466609">0978 466 609</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    &copy; 2025 Harmony Haven Spa · Central Street 9644, Chudleigh, Lusaka · All rights reserved
+  </div>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/260978466609" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="#hero" class="scroll-top" id="scrollTop" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+
+  <script>
+    // ── REVEAL ON SCROLL ──
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // ── SCROLL TOP ──
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // ── SEARCH ──
+    const services = [
+      { name: "Swedish Massage", desc: "Relaxing full-body massage", price: "K250 (was K300)", anchor: "#services" },
+      { name: "Deep Tissue Massage", desc: "Targets deep muscle pain", price: "K250 (was K350)", anchor: "#services" },
+      { name: "Thai Massage", desc: "Stretching & acupressure", price: "K250 (was K400)", anchor: "#services" },
+      { name: "Sports Massage", desc: "For athletes & active bodies", price: "K250 (was K400)", anchor: "#services" },
+      { name: "Body Scrub", desc: "Full body exfoliation", price: "K250 (was K400)", anchor: "#services" },
+      { name: "Sensual Massage", desc: "Intimate relaxation massage", price: "K250 (was K400)", anchor: "#services" },
+      { name: "Zambian Traditional", desc: "Herbal traditional therapy", price: "K250 (was K500)", anchor: "#services" },
+      { name: "Couples Massage", desc: "Relaxation for two", price: "K250 (was K600)", anchor: "#services" },
+      { name: "Four Hand Massage", desc: "Two therapists, one blissful session", price: "K250 (was K800)", anchor: "#services" },
+      { name: "Location", desc: "Central Street 9644, Chudleigh, Lusaka", price: "", anchor: "#map-section" },
+      { name: "Book Appointment", desc: "Call or WhatsApp: 0978 466 609", price: "", anchor: "#contact" },
+      { name: "Grand Opening Promo", desc: "All massages at K250!", price: "K250", anchor: "#promo" },
+    ];
+
+    const input = document.getElementById('searchInput');
+    const resultsDiv = document.getElementById('search-results');
+
+    function doSearch() {
+      const q = input.value.trim().toLowerCase();
+      resultsDiv.innerHTML = '';
+      if (!q) return;
+      const matches = services.filter(s =>
+        s.name.toLowerCase().includes(q) ||
+        s.desc.toLowerCase().includes(q)
+      );
+      if (!matches.length) {
+        resultsDiv.innerHTML = `<div style="padding:16px 6vw;color:var(--text);font-size:0.88rem;">No results found for "<em>${q}</em>". Try "massage", "couples", or "promo".</div>`;
+        return;
+      }
+      matches.forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'search-result-item';
+        div.innerHTML = `<span><i class="fa-solid fa-spa"></i></span><strong>${m.name}</strong> — ${m.desc}${m.price ? ' · <em style="color:var(--gold)">' + m.price + '</em>' : ''}`;
+        div.onclick = () => { document.querySelector(m.anchor)?.scrollIntoView({ behavior: 'smooth' }); resultsDiv.innerHTML = ''; input.value = ''; };
+        resultsDiv.appendChild(div);
+      });
+    }
+
+    input.addEventListener('keyup', e => { if (e.key === 'Enter') doSearch(); else if (input.value.length > 1) doSearch(); else resultsDiv.innerHTML = ''; });
+
+    // ── FORM ──
+    function submitForm() {
+      const fname = document.getElementById('fname').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value;
+      if (!fname || !phone || !service) {
+        alert('Please fill in your name, phone number, and select a service.');
+        return;
+      }
+      document.getElementById('formSuccess').style.display = 'block';
+      // Build WhatsApp prefill
+      const msg = `Hello Harmony Haven Spa! I'd like to book an appointment.%0AName: ${fname}%0APhone: ${phone}%0AService: ${service}`;
+      setTimeout(() => {
+        window.open(`https://wa.me/260978466609?text=${msg}`, '_blank');
+      }, 800);
+    }
+  </script>
+</body>
+</html>
